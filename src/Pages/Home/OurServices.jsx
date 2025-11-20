@@ -38,12 +38,12 @@ const OurServices = () => {
                     {services.map((service, index) => (
                         <div key={index} className="bg-white rounded-3xl p-6 shadow-md hover:bg-[#CAEB66]  transition-shadow duration-300">
                             <div className="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4 mx-auto">
-                                <div className="text-green-700">
+                                <div>
                                    <img src={serviceicon} alt="" />
                                 </div>
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
-                            <p className="text-gray-600">{service.description}</p>
+                            <h3 className="text-xl font-black text-secondary mb-2">{service.title}</h3>
+                            <p className="">{service.description}</p>
                         </div>
                     ))}
                 </div>
