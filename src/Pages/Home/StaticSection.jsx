@@ -25,8 +25,8 @@ const StaticSection = () => {
     ];
 
     return (
-        <div className="bg-gray-50 py-16 px-5 text-center">
-            <h2 className="text-3xl font-black mb-12 text-secondary">How it Works</h2>
+        <div className=" py-16 px-5 text-center">
+            <h2 className="text-3xl font-black mb-7 text-secondary">How it Works</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
                 {services.map((service, index) => (
                     <div 
