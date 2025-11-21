@@ -36,8 +36,8 @@ const StaticSection = () => {
                         <div className="mb-5 flex items-center justify-center w-20 h-20 rounded-full bg-blue-50">
                             <TbTruckDelivery size={50} />
                         </div>
-                        <h3 className="text-xl font-bold mb-4 text-gray-800">{service.title}</h3>
-                        <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
+                        <h3 className="text-xl font-bold mb-4 text-secondary">{service.title}</h3>
+                        <p className="text-sm text-[#606060]">{service.description}</p>
                     </div>
                 ))}
             </div>

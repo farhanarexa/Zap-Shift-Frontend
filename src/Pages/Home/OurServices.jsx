@@ -43,7 +43,7 @@ const OurServices = () => {
                                 </div>
                             </div>
                             <h3 className="text-xl font-black text-secondary mb-2">{service.title}</h3>
-                            <p className="">{service.description}</p>
+                            <p className="text-[#606060]">{service.description}</p>
                         </div>
                     ))}
                 </div>
