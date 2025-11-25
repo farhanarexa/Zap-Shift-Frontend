@@ -3,6 +3,9 @@ import Root from "../Layout/Root";
 import Home from "../Pages/Home/Home";
 import Coverage from "../Pages/Coverage/Coverage";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import AuthLayout from "../Layout/AuthLayout";
+import Register from "../Pages/Auth/Register";
+import Login from "../Pages/Auth/Login";
 
 export const router = createBrowserRouter([
   {
@@ -26,4 +29,22 @@ export const router = createBrowserRouter([
       
     ],
   },
+  {
+    path: "/",
+    Component: AuthLayout,
+    children: [
+      {
+        path: "login",
+        Component: Login,
+      },
+      {
+        path: "register",
+        Component: Register,
+      },
+    ],
+  },
+  {
+    path: "*",
+    Component: () => <h1>404 Not Found</h1>,
+  }
 ]);
